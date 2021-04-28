@@ -3,7 +3,7 @@ import os
 class Config:
 
     # get a token from @BotFather
-    BOT_TOKEN = os.environ.get("1714327530:AAEN3PFOXIg6jzUcSiUZaE_Wq4zqEApfdXc", "")
+    BOT_TOKEN = os.environ.get("171432753OXIg6jzUcSiUZaE_Wq1781708092:AAHQFvJgJ9s0tCxHDiCwYt_bEXA8eVi16mk", "")
 
     # The Telegram API things
     # Get these values from my.telegram.org
@@ -11,7 +11,7 @@ class Config:
     API_HASH = os.environ.get("f4c43c3a44c806e314416d5dcdf10443", "")
 
      # Sql Database url
-    DATABASE_URL = os.environ.get("DATABASE_URLpostgres://cqbamoagebgyve.amazonaws.com:5432/d6vs3b6v9o4oq7postgres://nsuaorfwgxgrja:3d68ac382de84d1fefa982bc9a5dab28f261b82570ef3364e7798a92c46fb88a@ec2-107-20-153-39.compute-1.amazonaws.com:5432/d9s967olomi225", "")
+    DATABASE_URL = os.environ.get("DATABASE_URLpostgres://cqbamoa/nsuaorfpostgres://svozjssurwpgly:519f4ba40151b2a1e6dcbfcbe346522ab8a3b124c9ecef392d5e089c8e493981@ec2-54-166-167-192.compute-1.amazonaws.com:5432/dd8qgp4j82mqou", "")
 
     # the download location, where the HTTP Server runs
     DOWNLOAD_DIRECTORY = "./DOWNLOADS"
