@@ -3,15 +3,15 @@ import os
 class Config:
 
     # get a token from @BotFather
-    BOT_TOKEN = os.environ.get("", "171432753OXIg6jzUcSiUZaE_Wq1781708092:AAHQFvJgJ9s0tCxHDiCwYt_bEXA8eVi16mk")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "171432753OXIg6jzUcSiUZaE_Wq1781708092:AAHQFvJgJ9s0tCxHDiCwYt_bEXA8eVi16mk")
 
     # The Telegram API things
     # Get these values from my.telegram.org
-    APP_ID = int(os.environ.get("", 1526915))
-    API_HASH = os.environ.get("", "f4c43c3a44c806e314416d5dcdf10443")
+    APP_ID = int(os.environ.get("APP_ID", 1526915))
+    API_HASH = os.environ.get("API_HASH", "f4c43c3a44c806e314416d5dcdf10443")
 
      # Sql Database url
-    DATABASE_URL = os.environ.get("DATABASE_URLpostgres://cqbamoa/nsuaorfpostgres://svozjssurwpgly:519f4ba40151b2a1e6dcbfcbe346522ab8a3b124c9ecef392d5e089c8e493981@ec2-54-166-167-192.compute-1.amazonaws.com:5432/dd8qgp4j82mqou", "")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "postgres://svozjssurwpgly:519f4ba40151b2a1e6dcbfcbe346522ab8a3b124c9ecef392d5e089c8e493981@ec2-54-166-167-192.compute-1.amazonaws.com:5432/dd8qgp4j82mqou")
 
     # the download location, where the HTTP Server runs
     DOWNLOAD_DIRECTORY = "./DOWNLOADS"
@@ -21,7 +21,7 @@ class Config:
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", "FxvbXbjuyr357e34fcj8qLJd-o9TXAcqqaZZAC6Ntf1J")
     
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("1087446551", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1087446551").split())
 
 
 class BotCommands:
