@@ -3,12 +3,12 @@ import os
 class Config:
 
     # get a token from @BotFather
-    BOT_TOKEN = os.environ.get("171432753OXIg6jzUcSiUZaE_Wq1781708092:AAHQFvJgJ9s0tCxHDiCwYt_bEXA8eVi16mk", "")
+    BOT_TOKEN = os.environ.get("", "171432753OXIg6jzUcSiUZaE_Wq1781708092:AAHQFvJgJ9s0tCxHDiCwYt_bEXA8eVi16mk")
 
     # The Telegram API things
     # Get these values from my.telegram.org
-    APP_ID = int(os.environ.get("1526915", 12345))
-    API_HASH = os.environ.get("f4c43c3a44c806e314416d5dcdf10443", "")
+    APP_ID = int(os.environ.get("", 1526915))
+    API_HASH = os.environ.get("", "f4c43c3a44c806e314416d5dcdf10443")
 
      # Sql Database url
     DATABASE_URL = os.environ.get("DATABASE_URLpostgres://cqbamoa/nsuaorfpostgres://svozjssurwpgly:519f4ba40151b2a1e6dcbfcbe346522ab8a3b124c9ecef392d5e089c8e493981@ec2-54-166-167-192.compute-1.amazonaws.com:5432/dd8qgp4j82mqou", "")
